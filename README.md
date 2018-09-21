@@ -46,12 +46,13 @@ os.system ("killall ScriptMonitor") #this avoids having the automator monitor op
 os.system (" echo yourPassword | sudo -S kextload /System/Library/Extensions_dis/AppleThunderboltNHI.kext ") #this loads the driver
 
 #this keeps your mac alive, you can tweak the number, the original one is (0.00002) and corresponds to a quite hight 20% cpu load, (0.001) is around 2% and its seems to be enough on my system
+
 while True:
     sleep(0.001) 
 
 5) replace yourPassword with your system password, it is needed to load the kext
 
-6) export the application, if you prefer you can download it form here https://github.com/pignoniG/Load_Tunderbolt but you need to edith the "Contents/document.wflow" file inside the app and repalce "yourPassword" with your password.
+6) export the application, if you prefer you can download it form here https://github.com/pignoniG/Load_Tunderbolt but you need to edit the "Contents/document.wflow" file inside the app and replace "yourPassword" with your password.
 
 
 
